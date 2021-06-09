@@ -45,10 +45,6 @@ print(c)
 print(a.y)
 
 
-
-
-
-
 # define a new Point object
 # to give it an initial value, we need to call the Constructor
 a: Point = Point(2.0, 3.0)
