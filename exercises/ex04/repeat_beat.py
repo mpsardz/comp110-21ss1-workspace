@@ -10,6 +10,7 @@ repeat: int = int(input("How many times do you want to repeat it? "))
 
 i: int = 1
 while i <= repeat:
+    beat = beat + beat 
     print(beat)
     i += 1
 if repeat <= 1:
