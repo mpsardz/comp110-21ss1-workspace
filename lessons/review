@@ -1,0 +1,17 @@
+
+
+1. a single function call expression can return multiple times in its evaluation - 
+    FALSE - you can call a function as many times as you want, but a single function call is only going to return once
+
+
+2. dictionaries can have keys of the same value, but cannot have values of the same value
+    FALSE - its flipped
+
+3. which of the following data types are stored on the heap?
+    list[str]
+    dict[int,int]
+
+4. that last index of a list is the length of the list
+    FALSE
+
+what 

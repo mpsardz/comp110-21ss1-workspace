@@ -2,7 +2,9 @@
 
 def f(a: int) -> str:
     if a >= 2:
-        return"Greater than or eq to 2"
-    else:
-        return "less than"
+        print("Hi")
+        if a % 2 == 0:
+            return "yay its even"
+
     return "unreachable"
+ 

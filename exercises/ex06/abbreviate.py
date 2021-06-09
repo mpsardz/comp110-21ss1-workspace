@@ -1,6 +1,6 @@
 """A function to abbreviate strings."""
 
-__author__ = "YOUR 9-DIGIT PID"
+__author__ = "730004269"
 
 
 def main() -> None:
