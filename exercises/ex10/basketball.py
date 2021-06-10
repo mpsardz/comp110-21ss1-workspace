@@ -4,7 +4,7 @@ __author__ = "YOUR 9-DIGIT PID"
 
 
 # TODO 1: Define the BBallGame class, and its logic, here.
-class BballGame:
+class BBallGame:
     biscuits: bool
     points: int
     winning_team: str
@@ -35,5 +35,5 @@ class BballGame:
     
     def reset_points(self) -> int:
         result: int = self.x
-        self.y = 0.0
+        self.x = 0.0
         return result

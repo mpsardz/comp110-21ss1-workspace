@@ -1,5 +1,9 @@
-"""DESCRIPTION OF PROGRAM HERE"""
+"""Numeric Operators"""
 
-__author__: str = "YOUR PID HERE"
+__author__: str = "730004269"
 
-# Your solution starts here...
+left : int = input("Left-hand side: ")
+right : int = input("Right-hand side: ")
+
+b = (left ** right)
+print(b)
