@@ -5,26 +5,22 @@ __author__ = "730004269"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
-    # TODO 3: Test your functions here
-
-
-# TODO 1: Define the is_prime function, and its logic, here.
-
-
 
 def is_prime(a: int) -> bool:
-    i: int = 0
-    while i >= 0:
-        if is_prime % 2 == 0:
+    i = 2
+    while a > i:
+        if a % i == 0:
             return(False)
-        elif is_prime <= 1:
-            return(False)
+        i += 1
+    return True
+
+def list_primes(b: int, c: int) -> list[int]:
+    prime = list()
+    for num in range(b, c):
+        if all(num % i != 0 for i in range(2, num)):
+            prime.append(num)
+    return prime
+
     
-
-
-
-# TODO 2: Define the list_primes function, and its logic, here.
-
-
 if __name__ == "__main__":
     main()
