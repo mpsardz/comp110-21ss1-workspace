@@ -7,10 +7,13 @@ def my_max(a: int, b: int) -> int:
     else:
         return b
 
+def main() -> None:
+    """Entrypoint of a program."""
+    print(my_max)
+
 
 arg_1: int = int(input("First arg: "))
 arg_2: int = int(input("Second arg: "))
 print(my_max(arg_1, arg_2))
 
-
- 
+def main() -> None

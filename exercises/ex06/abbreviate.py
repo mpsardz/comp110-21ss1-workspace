@@ -2,15 +2,25 @@
 
 __author__ = "730004269"
 
+def abbreviate(question: str) -> str:
+    newstring = ""
+    i = 0
+    while i < len(question):
+       if question[i].isupper():
+           newstring += question[i]
+       i += 1
+    return newstring  
 
 def main() -> None:
-    """The entrypoint of the program, when run as a module."""
-    # TODO 2: Prompt the user for text....
-    # .. and make use of abbreviate function and print it.
+    question: str = str(input("Wrtie some text with some uppercase letters:  "))
+    print(f"The abbreviation is a {abbreviate}")
 
-
-# TODO 1: Define the abbreviate function, and its logic, here.
-
+    # for new in question:
+    #   if new.isupper():
+    #      newstring += new
+    #return newstring
+    
+   
 
 if __name__ == "__main__":
     main()

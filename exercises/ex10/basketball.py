@@ -12,7 +12,7 @@ class BBallGame:
 
 # Define our own constructor 
     def __init__(self, points: int, winning_team: str, losing_team: str): 
-        self.x = points
+        self.x = points 
         self.y = winning_team
         self.z = losing_team
         self.biscuits = False
