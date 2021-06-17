@@ -15,7 +15,8 @@ def is_prime(a: int) -> bool:
     return True
 
 def list_primes(b: int, c: int) -> list[int]:
-    prime = list()
+    
+    prime = list[int]
     for num in range(b, c):
         if all(num % i != 0 for i in range(2, num)):
             prime.append(num)
