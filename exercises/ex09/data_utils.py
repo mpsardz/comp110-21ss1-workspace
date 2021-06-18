@@ -1,9 +1,66 @@
 """Data utility functions."""
 
-__author__ = "YOUR 9-DIGIT PID"
+__author__ = "730004269"
 
 
 #TODO 0: Paste the functions we've been working on in class, here.
 
+from csv import DictReader
+
+
+def read_csv_rows(path: str) -> list[dict[str, str]]:
+    """Read a CSV file and return a list of its rows."""
+    file_handle = open(path, "r", encoding="utf8")
+    csv_reader = DictReader(file_handle)
+    rows: list[dict[str, str]] = []
+    for row in csv_reader:
+        rows.append(row)
+    file_handle.close()
+    return rows
+
+
+def column_values(table: list[dict[str, str]], column: str) -> list[str]:
+    """Return a column's values."""
+    values: list[str] = []
+    for row in table:
+        values.append(row[column])
+    return values
+
+
+def columnar(table: list[dict[str, str]]) -> dict[str, list[str]]:
+    """Convert a table of rows to a table of columns."""
+    result: dict[str, list[str]] = {}
+    keys = table[0].keys()
+    for key in keys:
+        result[key] = column_values(table, key)
+    return result
+
+
+def head(table: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
+    """Get the first n rows."""
+    result: dict[str, list[str]] = {}
+    for key in table:
+        result[key] = table[key][:rows]
+    return result
+
+
+def select(table: dict[str, list[str]], cols: list[str]) -> dict[str, list[str]]:
+    """Select only a subset of columns."""
+    result: dict[str, list[str]] = {}
+    for col in cols:
+        result[col] = table[col]
+    return result
 
 # TODO 1: Define the count function, and its logic, here.
+def count(table: list[str]) -> dict[str, int]:
+    store: dict[str, int] = {}
+    for a in table:
+        if a in store:
+            store[a] += 1
+        else:
+            store[a] = 1
+    return store
+
+
+
+

@@ -22,13 +22,10 @@ high_temps: list[float] = []
 for row in table:
     high: float = float(row["high"])
     high_temps.append(high)
-print(f" The high temps were {high_temps}")
-
+print("The average temps were {high_temps}")
+    
 print("The average high temp was: ")
 avg_high: float = sum(high_temps) / len(high_temps)
 print(avg_high)
-
-
-
 
 
