@@ -5,6 +5,8 @@ __author__ = "730004269"
 
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
+
+
 # TODO 1: Define the over_21 function, and its logic, here.
 def over_21(kids: dict[str, int]) -> list[str]:
     result: list[str] = []

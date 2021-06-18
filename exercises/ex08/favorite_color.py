@@ -12,7 +12,8 @@ frequency_table: dict[str, int] = {}
 # TODO 1: Define the favorite_color function, and its logic, here.
 
 def favorite_color(store: dict[str, str]) -> str:
-
+    result = str
+    
 
 
 
