@@ -12,6 +12,7 @@ pytest-timeout
 
 # Static Typing - Checks type annotations to look for accidental errors.
 mypy
+emoji 
 
 # Code Linting - Checks code for styling consistencies.
 flake8
